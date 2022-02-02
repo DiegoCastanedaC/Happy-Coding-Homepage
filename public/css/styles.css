@@ -1,0 +1,276 @@
+
+
+/* .camisetas {
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #3066cb63;
+    
+} */
+
+
+header{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100vw;
+    /* height: 100%; */
+    justify-content: space-between;
+    background-color: rgb(218, 218, 218);
+}
+
+.logo{
+    flex-grow: 2; 
+} 
+
+.SeccioBotones{
+flex-grow: 8;
+display: flex;
+justify-content: flex-end;
+}
+
+.busuqeda{
+    /* width: 40vw;  */
+    align-self: flex-start;
+    align-self: center;
+}
+
+.boton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:15px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    height: 50px;
+    align-self: flex-start;
+    align-self: center;
+    margin: 3px;
+}
+.boton:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.boton:active {
+	position:relative;
+	top: 5px;
+}
+
+
+/*.boton{
+    /* flex-grow: 1;
+    height: 50px;
+    align-self: flex-start;
+    align-self: center;
+    margin: 3px;
+}*/
+
+
+
+.ImagenesHome{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    /* height: 100%; */
+    justify-content: space-between;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-size: 1.2cm;
+    background-color: black;
+}
+
+.elemento1{
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+}
+
+.elemento2{
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.elemento3{
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+}
+
+.elemento4{
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+}
+
+.elemento5{
+    width: 20%;
+    height: 100vh; 
+}
+
+
+.chaqueta-portada{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+.chaqueta-portada:hover{
+    position: relative;
+    z-index: 10;
+    width: 200%;
+    right: 100px;
+}
+
+.chaqueta-portada:active{
+    position:relative;
+	top: 5px;
+    border: 10px solid darkblue ;
+}
+
+.socks-portada{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+.socks-portada:hover{
+    position: relative;
+    z-index: 10;
+    width: 200%;
+    right: 100px;
+}
+
+.socks-portada:active{
+    position:relative;
+	top: 5px;
+    border: 10px solid darkblue ;
+}
+
+.mochila-portada{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+.mochila-portada:hover{
+    position: relative;
+    z-index: 10;
+    width: 200%;
+    right: 100px;
+}
+
+.mochila-portada:active{
+    position:relative;
+	top: 5px;
+    border: 10px solid darkblue ;
+}
+
+.camisa-portada{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+.camisa-portada:hover{
+    position: relative;
+    z-index: 10;
+    width: 200%;
+    right: 100px;
+}
+
+.camisa-portada:active{
+    position:relative;
+	top: 5px;
+    border: 10px solid darkblue ;
+}
+
+.gorra-portada{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+.gorra-portada:hover{
+    position: relative;
+    z-index: 10;
+    width: 200%;
+    right: 100px;
+}
+
+.gorra-portada:active{
+    position:relative;
+	top: 5px;
+    border: 10px solid darkblue ;
+}
+
+
+section{
+    display: flex;
+    width: 100vw;
+    height: 20px;
+}
+
+.prueba1{
+    flex-grow: 1;
+}
+.prueba2{
+    flex-grow: 1;
+}
+.prueba3{
+    flex-grow: 1;
+}
+.prueba4{
+    flex-grow: 1;
+}
+.prueba5{
+    flex-grow: 1;
+}
+
+
+
+.contenedor{
+    display: flex;
+    width: 100vw;
+    height: 20px;
+}
+
+.espacioAbajo{
+    flex-grow: 8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor1{
+    width: 5vw;
+    height: 15vh;
+    background-color: #3fa379;
+    flex-grow: 2;
+}
+.contenedor2{
+    width: 15vw;
+    height: 15vh;
+    background-color: #308dcb;
+}
+.contenedor3{
+    width: 15vw;
+    height: 15vh;
+    background-color: #cb3052;
+}
+
+.contenedor4{
+    background-color: #666464;
+    flex-grow: 1;
+}
