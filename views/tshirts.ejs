@@ -73,38 +73,19 @@
 
 <!-- BARRA DE BUSQUEDA -->
 
-<div class="buscar">
-    <input type="text" placeholder="Buscar" required>
-    <div class="btn">
-        <i class="fas fa-search"></i>
-    </div>
-       </div>
-
-<!-- ICONO HOME PAGE SIGN IN -->
-
-<!-- <div class= "iconoSign">
-    
-</div> -->
-
-
-<!--inicio de header LOGO HAPPY CODING-->
-<header>
-    <div class="logo">
-        <img src="img/Logo-Icon/Logo-PNG1.png" class="logo"> 
-    </div>
-</header>
-<!-- fin de header LOGO HAPPY CODING -->
+<%- include('partials/header.ejs') %>
 
 
 <body>
     <header class="Tshirts">
+
+
+        <!----------------- CONTENEDOR ARTICULOS ------------------->
         <div class="MargenTshirts">
-
             <div class="articulos">
-
                 <article class="camisa">
                     <div  class="contedorCamisa">
-                        <img src="img/T-shirts/Camisa Blanca.jpg" alt="" class="imgCamisa imgCamisa1">
+                        <a href="javascript:abrir1()"><img src="img/T-shirts/Camisa Blanca.jpg" alt="" class="imgCamisa imgCamisa1"></a>
                     </div>
                     <div class="main-article">
                         <p class="price">$6.770</p>
@@ -113,7 +94,7 @@
 
                 <article class="camisa">
                     <div  class="contedorCamisa">
-                        <img src="img/T-shirts/Black-T-shirt.png" alt="" class="imgCamisa imgCamisa2">
+                        <a href="javascript:abrir2()"><img src="img/T-shirts/Black-T-shirt.png" alt="" class="imgCamisa imgCamisa2"></a>
                     </div>
                     <div class="main-article">
                         <p class="price">$6.770</p>
@@ -122,7 +103,7 @@
 
                 <article class="camisa">
                     <div  class="contedorCamisa">
-                        <img src="img/T-shirts/Camisa Gris.jpg" alt="" class="imgCamisa imgCamisa3">
+                        <a href="javascript:abrir3()"><img src="img/T-shirts/Camisa Gris.jpg" alt="" class="imgCamisa imgCamisa3"></a>
                     </div>
                     <div class="main-article">
                         <p class="price">$6.770</p>
@@ -131,7 +112,7 @@
 
                 <article class="camisa">
                     <div  class="contedorCamisa">
-                        <img src="img/T-shirts/Camisa-portada.jpg" alt="" class="imgCamisa imgCamisa4">
+                        <a href="javascript:abrir4()"><img src="img/T-shirts/Camisa-portada.jpg" alt="" class="imgCamisa imgCamisa4"></a>
                     </div>
                     <div class="main-article">
                         <p class="price">$6.770</p>
@@ -142,9 +123,11 @@
 
             
 
+            <!----------------- CONTENEDOR DESCIRPCION DE ARTICULO A COMPRAR ------------------->
+
             <div class="MargenTshirts2">
 
-                <div class="Camisa1">
+                <div class="camisaCompra1" id="camisaCompra1">
                     <div  class="contedorCamisa1">
                         <img src="img/T-shirts/Camisa Blanca.jpg" alt="" class="imgCamisa1">
                     </div>
@@ -159,33 +142,55 @@
 
                     </div>
                 </div>
-<!-- 
-                <div class="Camisa2">
+
+                <div class="camisaCompra2" id="camisaCompra2">
                     <div  class="contedorCamisa1">
                         <img src="img/T-shirts/Black-T-shirt.png" alt="" class="imgCamisa1">
                     </div>
-                    <div class="main-article1">
+                    <div class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam deleniti accusantium cupiditate, laudantium eum nobis quos, quisquam consequatur, dolore nisi maxime eligendi et nemo quo optio maiores rem unde?</div>
+                    
+                    <div class="precio-carrito">
                         <p class="price">$6.770</p>
+                    
+                    <div class="agregarCarro">
+                        <a href="#" class="neon1-button">Add to Car</a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="Camisa3">
+                <div class="camisaCompra3" id="camisaCompra3">
                     <div  class="contedorCamisa1">
                         <img src="img/T-shirts/Camisa Gris.jpg" alt="" class="imgCamisa1">
                     </div>
-                    <div class="main-article1">
+                    <div class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam deleniti accusantium cupiditate, laudantium eum nobis quos, quisquam consequatur, dolore nisi maxime eligendi et nemo quo optio maiores rem unde?</div>
+                    
+                    <div class="precio-carrito">
                         <p class="price">$6.770</p>
+                    
+                    <div class="agregarCarro">
+                        <a href="#" class="neon1-button">Add to Car</a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="Camisa4">
+                <div class="camisaCompra4" id="camisaCompra4">
                     <div  class="contedorCamisa1">
                         <img src="img/T-shirts/Camisa-portada.jpg" alt="" class="imgCamisa1">
                     </div>
-                    <div class="main-article1">
+                    <div class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam deleniti accusantium cupiditate, laudantium eum nobis quos, quisquam consequatur, dolore nisi maxime eligendi et nemo quo optio maiores rem unde?</div>
+                    
+                    <div class="precio-carrito">
                         <p class="price">$6.770</p>
+                    
+                    <div class="agregarCarro">
+                        <a href="#" class="neon1-button">Add to Car</a>
+                        </div>
+
                     </div>
-                </div> -->
+                </div>
+
 
 
             </div>
@@ -200,6 +205,35 @@
 
     <footer>
     </footer>
+
+    <!-- CODIGO JAVA PARA PODER REALZIAR INTERCAMBIO DE PANTALLAS -->
+    <script>
+        function abrir1(){
+            document.getElementById("camisaCompra1").style.display="block"
+            document.getElementById("camisaCompra2").style.display="none"
+            document.getElementById("camisaCompra3").style.display="none"
+            document.getElementById("camisaCompra4").style.display="none"
+        }
+        function abrir2(){
+            document.getElementById("camisaCompra2").style.display="block"
+            document.getElementById("camisaCompra1").style.display="none"
+            document.getElementById("camisaCompra3").style.display="none"
+            document.getElementById("camisaCompra4").style.display="none"
+        }
+        function abrir3(){
+            document.getElementById("camisaCompra3").style.display="block"
+            document.getElementById("camisaCompra1").style.display="none"
+            document.getElementById("camisaCompra2").style.display="none"
+            document.getElementById("camisaCompra4").style.display="none"
+        }
+        function abrir4(){
+            document.getElementById("camisaCompra4").style.display="block"
+            document.getElementById("camisaCompra1").style.display="none"
+            document.getElementById("camisaCompra2").style.display="none"
+            document.getElementById("camisaCompra3").style.display="none"
+        }
+
+    </script>
     
 </body>
 </html>

@@ -451,14 +451,11 @@ body {
 }
 
 .MargenTshirts {
-  /* width: 80%; */
-  /* height: 80vh; */
   font-size: 2.8rem;
   display: inline-block;
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.125em solid;
-  /* padding: 0.25em 1em; */
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
@@ -484,15 +481,12 @@ article div.main-article{
 
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .camisa{
   width: 45%;
-  /* height: 50%; */
   color: var(--clr-neon);
   border: var(--clr-neon) 2px solid;
-  /* padding: 0.25em 1em; */
   border-radius: 0.25em;
   margin: 1%;
   
@@ -521,16 +515,12 @@ article div.main-article{
 
 .price{
   font-size: 100%;
-  /* width: 30%; */
-  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-bm), 0 0 0.5em 0 var(--clr-bm); */
 }
 
 
 
 .MargenTshirts2 {
   width: 100%;
-  /* height: 80vh; */
   font-size: 2.8rem;
   display: inline-block;
   text-decoration: none;
@@ -540,32 +530,49 @@ article div.main-article{
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-  /* margin: 1vh 5% 5% 5%; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   justify-content: center;
-
-  /* background-color: rgb(9, 255, 0); */
 }
 
 
-.Camisa1{
-  /* width: 100%; */
+.camisaCompra1{
   height: 100%;
   color: var(--clr-neon);
   border: var(--clr-neon) 2px solid;
-  /* padding: 0.25em 1em; */
   border-radius: 0.25em;
   margin: 1%;
+  display: none;
+}
 
-  /* display: none; */
+.camisaCompra2{
+  height: 100%;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 2px solid;
+  border-radius: 0.25em;
+  margin: 1%;
+  display: none;
+}
 
-  /* justify-content: center;
-  align-items: center; */
-  
+.camisaCompra3{
+  height: 100%;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 2px solid;
+  border-radius: 0.25em;
+  margin: 1%;
+  display: none;
+}
+
+.camisaCompra4{
+  height: 100%;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 2px solid;
+  border-radius: 0.25em;
+  margin: 1%;
+  display: none;
 }
 
 
@@ -599,14 +606,11 @@ article div.main-article{
 
 
 .MargenSocks{
-    /* width: 80%; */
-  /* height: 80vh; */
   font-size: 2.8rem;
   display: inline-block;
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.125em solid;
-  /* padding: 0.25em 1em; */
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
