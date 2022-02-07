@@ -24,6 +24,18 @@ const mainController={
         return res.render("hats")
     },
 
+    search:(req,res)=>{
+        let busquedaDeUsuario=req.query.query
+        res.send(busquedaDeUsuario)
+    },
+
+    register:(req,res)=>{
+        return res.render("register")
+    },
+
+    create:(req,res)=>{
+
+    }
 
 }
 
