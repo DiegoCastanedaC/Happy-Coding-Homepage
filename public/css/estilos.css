@@ -469,6 +469,7 @@ body {
 
 .articulos{
 
+  width: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -478,7 +479,8 @@ body {
 
 
 
-article div.main-article{
+div.main-article{
+  /* height: 80%; */
   width: 100%;
   border-top: 1px solid #ebebeb;
 
@@ -488,6 +490,7 @@ article div.main-article{
 }
 
 .camisa{
+  height:45%;
   width: 45%;
   color: var(--clr-neon);
   border: var(--clr-neon) 2px solid;
@@ -498,16 +501,24 @@ article div.main-article{
 
 
 .contedorCamisa{
+  height: 80%;
+  /* width: 80%; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
+.ContededorImagen{
+  display: flex;
+  justify-content: center;
+}
 
 .imgCamisa{
+  
+  height: 80%;
   width: 80%;
-  border-radius: 5%;
-  margin: 3%;
+  object-fit: contain;
+
 }
 
 
@@ -524,7 +535,7 @@ article div.main-article{
 
 
 .MargenTshirts2 {
-  width: 100%;
+  width: 40%;
   font-size: 2.8rem;
   display: inline-block;
   text-decoration: none;
@@ -544,38 +555,22 @@ article div.main-article{
 
 
 .camisaCompra1{
-  height: 100%;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 2px solid;
-  border-radius: 0.25em;
-  margin: 1%;
+  height: 80%;
   display: none;
 }
 
 .camisaCompra2{
-  height: 100%;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 2px solid;
-  border-radius: 0.25em;
-  margin: 1%;
+  height: 80%;
   display: none;
 }
 
 .camisaCompra3{
-  height: 100%;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 2px solid;
-  border-radius: 0.25em;
-  margin: 1%;
+  height: 80%;
   display: none;
 }
 
 .camisaCompra4{
-  height: 100%;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 2px solid;
-  border-radius: 0.25em;
-  margin: 1%;
+  height: 80%;
   display: none;
 }
 
@@ -583,6 +578,7 @@ article div.main-article{
 
 
 .contedorCamisa1{
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,9 +587,9 @@ article div.main-article{
 
 
 .imgCamisa1{
-  width: 80%;
-  border-radius: 5%;
-  margin: 3%;
+  height: 90%;
+   width: 100%;
+  /* object-fit: contain; */
 }
 
 .descripcion{
@@ -620,4 +616,46 @@ article div.main-article{
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   margin: 1vh 5% 5% 5%;
   display: flex;
+}
+
+.MargenHoodies {
+  font-size: 2.8rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-ba);
+  border: var(--clr-ba) 0.125em solid;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-ba), 0 0 0.5em 0 var(--clr-ba);
+  margin: 1vh 5% 5% 5%;
+  display: flex;
+}
+
+.MargenHoodies2 {
+  width: 40%;
+  font-size: 2.8rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-ba);
+  border: var(--clr-ba) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-ba), 0 0 0.5em 0 var(--clr-ba);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hoodies{
+  height:45%;
+  width: 45%;
+  color: var(--clr-ba);
+  border: var(--clr-ba) 2px solid;
+  border-radius: 0.25em;
+  margin: 1%;
+  
 }

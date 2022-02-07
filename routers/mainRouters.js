@@ -8,5 +8,6 @@ router.get("/socks", mainControlers.socks)
 router.get("/bags", mainControlers.bags)
 router.get("/hoodies", mainControlers.hoodies)
 router.get("/hats", mainControlers.hats)
+router.get("/search",mainControlers.search)
 
 module.exports=router
