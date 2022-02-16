@@ -4,89 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- LUPA BARRA BUSQUEDA -->
+    <script src="https://kit.fontawesome.com/2b2ce65092.js" crossorigin="anonymous"></script>
+    <title>Happy Coding</title>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-    <title>Document</title>
-
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/public/css/estilos.css">
 </head>
 
 <body>
 
-<!--inicio de header-->
-    <header>
-        <img src="img/Logo/Logo-PNG.png" class="logo"> 
-        <div class="SeccioBotones">
-            <input type="text" name="user" placeholder="¿Que articulo buscas?" class="busuqeda">
-            <!-- <div class="espacio"></div> -->
-                <!-- <div class="botones"> -->
-                    <button href="#" class="boton"><a>Ofertas</a></button>
-                    <button href="#" class="boton"><a>Registrarse</a></button>
-                    <button href="#" class="boton">Ingresar</button>
-                    <!-- <button href="#" class="boton"><a >Carrito</a></button> -->
-                <!-- </div> -->
-        </div>
-    </header>
+<!--inicio de header LOGO HAPPY CODING-->
 
-    <main class="ImagenesHome">
 
-        <!-- inicio de la primera section TSHIRTS -->
 
-        <section class="elemento1">
-            <button><img src="img/Chaqueta/Chaqueta_Portada.jpg" alt="" class="chaqueta-portada"></button>
-        </section>
+<div class="logo">
+    <img src="/public/img/Logo-Icon/Logo-PNG1.png" class="logo"> 
+    </div>
 
-        <!-- inicio de la segunda section MEDIAS -->
+<!-- BARRA DE BUSQUEDA -->
+<div class="buscar">
+    <input type="text" placeholder="Buscar" required>
+    <div class="btn">
+        <i class="fas fa-search"></i>
+    </div>
+       </div>
 
-        <section class="elemento2">
-            <img src="img/Socks/socks-Portada.jpg" alt="" class="socks-portada">
-        </section>
+<!-- SECCIONES, BOTONES Y CLASES. -->
 
-         <!-- inicio de la tercera section MALETAS -->
-
-         <section class="elemento3">
-            <img src="img/Mochilas/Mochila_Portada.jpg" alt="" class="mochila-portada">
-        </section>
-
-        <!-- inicio de la cuarta section SUDADERAS -->
-
-        <section class="elemento4">
-            <img src="img/T-shirts/Camisa-portada.jpg" alt="" class="camisa-portada">
-        </section>
-
-        <!-- inicio de la quinta section GORRAS -->
-
-        <section class="elemento5">
-            <img src="img/Hats/gorra de portada.jpeg" alt="" class="gorra-portada">
-        </section>
-        
-        
-
-    </main>
-
-    <!--Inicio del Footer-->
-
-    <footer>
-        <div class="contenedor">
-            <div class="contenedor1"></div>
-            <div class="espacioAbajo">
-                <div class="contenedor2"></div>
-                <div class="contenedor3"></div>
-                <!-- <div class="contenedor4"></div> -->
+<div>
+<!-- Animacion Boton Get Started -->
+    <div class="started">
+        <div class="svg hide" id="svg"></div>
+        <!-- GET STARTED & Button -->
+    <div class='started button'>
+        <a href="#" class="started-button">Get Started</a>
         </div>
         </div>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
 
-    <section>
-        <button class="prueba1"><a href="#">Ofertas</a></button>
-        <button class="prueba2"><a href="#">Quienes Somos</a></button>
-        <button class="prueba3"><a href="#">Ayuda</a></button>
+        const svgContainer = document.getElementById('svg');
+        const animItem = bodymovin.loadAnimation({
+            wrapper: svgContainer,
+            animType: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://assets2.lottiefiles.com/packages/lf20_aRvNGV.json'
+        });
+    </script>
+</div>
+
+
+<!-- inicio contenedor secciones -->
+<div class="contenedor">
+
+<!-- Tshirts Button -->
+    <div class='elementoTshirts'>
+        <a href="#" class="neon-button">T-Shirts</a>
+
+
         </div>
-        <!-- <button class="prueba4"><a href="#">Registrarse</a></button>
-        <button class="prueba5"> <a href="#">Ingresar</a></button>
-        <button class="prueba6"><a href="#">Carrito</a></button> -->
-    </section>
-    
+
+<!-- Funky Socks Container & Button  -->
+    <div class="elementoSocks">
+        <a href="#" class="neon1-button">Funky Socks</a>
+
+        </div>
+
+<!-- Hacker bags Container & Button -->
+<div class='elementoBags'>
+    <a href="#" class="neon2-button">Hacker Bags</a>
+
+    </div>
+
+<!-- Code Hoodies Container & Button  -->
+<div class="elementoHoodies">
+    <a href="#" class="neon3-button">Code Hoodies</a>
+
+    </div>
+
+<!-- Smart Hats Container & Button -->
+<div class='elementoHats'>
+    <a href="#" class="neon4-button">Smart Hats</a>
+
+    </div>
+
+</div> <!--fin DIV botones-->    
+</div>
+
 </body>
+
+<p></p>
 </html>

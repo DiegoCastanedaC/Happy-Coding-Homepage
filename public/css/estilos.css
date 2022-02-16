@@ -1,20 +1,28 @@
-/* ANIMACIONES */
-
-/* CONTAINER BODY */
-.contenedor{
+/* FONDO, LETRA Y TAMANO BODY */
+* {
+  box-sizing: border-box;
+}
+.logo {
   display: flex;
-  height: 700px;
-  align-items: center;
-  }
+  flex-wrap: wrap;
+  flex: 90%;
+  max-width: 50%;
+  margin-top: 0.3cm;
+}
+
 
 /* BARRA DE BUSQUEDA */
 .buscar{
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
   padding: 5px;
   top: 4%;
-  left: 50%;
+  left: 48.5%;
 }
 .buscar input{
+  display: flex;
+  flex-wrap: wrap;
   width: 0px;
   height: 40px;
   padding: 0 20px;
@@ -27,6 +35,7 @@
   transition: all 1s ease;
 }
 .btn{
+  flex-wrap: wrap;
   position: absolute;
   top: 0;
   right: 0;
@@ -48,67 +57,133 @@
 }
 
 
-
-
 /* BOTONES */
-.elementoTshirts{
-  flex-grow: 1;
-}
-.elementoSocks{
-  flex-grow: 1;
-}
-.elementoBags{
-  flex-grow: 1;
-}
-.elementoHoodies{
-  flex-grow: 1;
-}
-.elementoHats{
-  flex-grow: 1;
-}
 
 /* COLORES BOTONES */
 :root {
   --clr-neon: rgb(255, 153, 20);
-  --clr-bg: rgb(41, 37, 39);
+  --clr-bg: rgb(0, 0, 0);
   --clr-bl:rgb(75, 255, 20);
   --clr-bm:rgb(169, 20, 255);
   --clr-ba:rgb(20, 63, 255);
   --clr-br:rgb(255, 20, 59);
+  --clr-bs:rgb(231, 255, 20);
+}
+
+/* ANIMACIONES GET STARTED */
+
+.svg { 
+  display: flex;
+  flex-wrap: wrap;
+  width: 130px;;
+  position: relative;
+  margin-top: -10%;
+  margin-left: 85%;
+  pointer-events: none;
+}
+
+/* BOTON GET STARTED */
+.started-button {
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-bs);
+  border: var(--clr-bs) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-bs), 0 0 0.5em 0 var(--clr-bs);
+
+  position: relative;
+  top: 13%;
+  right: -86%;
+
+}
+
+.started-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-bs);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.started-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-bs);
+  opacity: 0;
+  background-color: var(--clr-bs);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.started-button:hover,
+.started-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.started-button:hover::before,
+.started-button:focus::before {
+  opacity: 1;
+}
+.started-button:hover::after,
+.started-button:focus::after {
+  opacity: 1;
 }
 
 
-/* FONDO, LETRA Y TAMANO BODY */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Animacion TShirts */
 
+
+
+/* Fin Animacion TShirts */
+
+/* CONTAINER BODY */
 body {
-  min-height: 100vh;
+
   background: var(--clr-bg);
   font-family: 'Roboto Mono', monospace;
-  color: var(--clr-neon);
-  
+  margin: 0;
+
 }
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+/* ----- */
+
 
 /* BOTON T-SHIRTS */
 .neon-button {
-  font-size: 2.8rem;
-
-  display: inline-block;
+  font-size: 1.91rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
   position: relative;
 }
 
@@ -156,23 +231,20 @@ body {
   opacity: 1;
 }
 
-/* Animacion TShirts */
 
+
+
+/* BOTON FUNKY SOCKS */
 .neon1-button {
-  font-size: 2.8rem;
-
-  display: inline-block;
+  font-size: 1.91rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-bl);
   border: var(--clr-bl) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-bl), 0 0 0.5em 0 var(--clr-bl);
-
   position: relative;
 }
 
@@ -222,27 +294,16 @@ body {
 
 
 /* BOTON HACKER BAGS */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .neon2-button {
-  font-size: 2.8rem;
-
-  display: inline-block;
+  font-size: 1.91rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-bm);
   border: var(--clr-bm) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-bm), 0 0 0.5em 0 var(--clr-bm);
-
   position: relative;
 }
 
@@ -291,27 +352,16 @@ body {
 }
 
 /* BOTON CODE HODDIES */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .neon3-button {
-  font-size: 2.8rem;
-
-  display: inline-block;
+  font-size: 1.91rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-ba);
   border: var(--clr-ba) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-ba), 0 0 0.5em 0 var(--clr-ba);
-
   position: relative;
 }
 
@@ -360,27 +410,16 @@ body {
 }
 
 /* BOTON SMART HATS */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .neon4-button {
-  font-size: 2.8rem;
-
-  display: inline-block;
+  font-size: 1.91rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-br);
   border: var(--clr-br) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-br), 0 0 0.5em 0 var(--clr-br);
-
   position: relative;
 }
 
@@ -427,6 +466,8 @@ body {
 .neon4-button:focus::after {
   opacity: 1;
 }
+
+
 
 
 
